@@ -5,8 +5,6 @@ public class Main {
         while(true){
             tic.playerOne();
             tic.playerTwo();
-        }
-
-        
+        }  
     }
 }

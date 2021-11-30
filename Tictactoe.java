@@ -28,7 +28,7 @@ public class Tictactoe{
                 grid[user] = "X";
                 show();
             }
-            winnerOne();
+            winner();
     }
 
     public void playerTwo(){
@@ -43,10 +43,10 @@ public class Tictactoe{
                 grid[user] = "O";
                 show();
             }
-            winnerTwo();
+            winner();
     }
 
-    public void winnerOne(){
+    public void winner(){
         if(grid[0] == "X" && grid[1] == "X" && grid[2] == "X"){
             System.out.println("PLAYER ONE WINS!!!");
             System.exit(0);
@@ -86,14 +86,8 @@ public class Tictactoe{
             System.out.println("PLAYER ONE WINS!!!");
             System.exit(0);
         }
-    }
 
-
-
-
-
-    public void winnerTwo(){
-        if(grid[0] == "O" && grid[1] == "O" && grid[2] == "O"){
+        else if(grid[0] == "O" && grid[1] == "O" && grid[2] == "O"){
             System.out.println("PLAYER TWO WINS!!!");
             System.exit(0);
         }
