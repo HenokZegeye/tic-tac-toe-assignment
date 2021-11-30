@@ -161,9 +161,7 @@ public class TicTacToe {
 		}
 	}
 
-	
-	
-	//this prints the board in the console
+
 	private static void printBoard(char[][] board) {
 		System.out.println(board[0][0] + "|" +  board[0][1] + "|" +  board[0][2] );
 		System.out.println("-+-+-");
