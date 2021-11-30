@@ -126,7 +126,7 @@ public class TicTacToe {
 		placeMove(board, userInput, 'X');
 	}
 
-		//this make the user and computer place their moves
+		//this make the user and computer place their move
 	private static void placeMove(char[][] board, String position, char symbol) {
 		switch(position) {
 			case "1":
