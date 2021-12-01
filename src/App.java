@@ -17,7 +17,6 @@ public class App {
         Player currentPlayer = player1;
      
         boolean endGame = false;
-        int counter = 0;
         ArrayList<String> selectedBoxs =  b1.getSelectedBoxs();
 
         
@@ -41,19 +40,17 @@ public class App {
                 System.out.println(currentPlayer.getName() + " Won");
                 System.out.println(selectedBoxs);
                 endGame = true;
-            }else if(counter < 8){
+            }else if(selectedBoxs.size() <= 8){
                 if(currentPlayer == player1){
                     currentPlayer = player2;
                 }else{
                     currentPlayer = player1;    
                 }
-            }else if(counter >= 8){
+            }else if(selectedBoxs.size() > 8){
                 b1.displayBoard();
                 System.out.println("Its a tie");
                 endGame = true;
             }
-
-            counter++;
             
         }
 
